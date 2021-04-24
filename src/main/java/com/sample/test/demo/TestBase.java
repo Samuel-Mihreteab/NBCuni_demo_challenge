@@ -7,9 +7,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
-import Utilities.Library;
+import com.sample.test.demo.utilities.Library;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -19,7 +22,7 @@ public class TestBase {
     public static WebDriver driver;
     protected String url;
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeMethod(alwaysRun = true)
     public void init() throws Throwable {
     	lib = new Library(driver);
         config = new Configuration();
@@ -32,7 +35,7 @@ public class TestBase {
         driver.get(url);
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         try {
             driver.quit();
@@ -44,9 +47,10 @@ public class TestBase {
     private void initializelDriver() {
         if (config.getBrowser().equalsIgnoreCase("chrome")) {
             if (config.getPlatform().equalsIgnoreCase("mac")) {
-                //System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/mac/chromedriver");
             	
-            	WebDriverManager.chromedriver().setup();
+            	//WebDriverManager.chromedriver().setup();
+                
             	driver = new ChromeDriver();
             	driver.manage().deleteAllCookies();
             	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -54,9 +58,10 @@ public class TestBase {
             	driver.manage().window().maximize();
             
             } else {
-                //System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver/windows/chromedriver.exe");
             
-            	WebDriverManager.chromedriver().setup();
+            	//WebDriverManager.chromedriver().setup();
+               
             	driver = new ChromeDriver();
             	driver.manage().deleteAllCookies();
             	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

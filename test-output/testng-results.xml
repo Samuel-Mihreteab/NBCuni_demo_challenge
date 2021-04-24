@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16326" started-at="2021-04-22T23:36:45Z" finished-at="2021-04-22T23:37:01Z">
+  <suite started-at="2021-04-24T15:32:05Z" name="Default suite" finished-at="2021-04-24T15:33:02Z" duration-ms="56762">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16326" started-at="2021-04-22T23:36:45Z" finished-at="2021-04-22T23:37:01Z">
+    <test started-at="2021-04-24T15:32:05Z" name="Default test" finished-at="2021-04-24T15:33:02Z" duration-ms="56762">
       <class name="com.sample.test.demo.tests.DemoTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.sample.test.demo.tests.DemoTest@fdefd3f]" name="init" is-config="true" duration-ms="4919" started-at="2021-04-22T23:36:45Z" finished-at="2021-04-22T23:36:50Z">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:05Z" name="init" finished-at="2021-04-24T15:32:10Z" duration-ms="4748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="happypathTest()[pri:0, instance:com.sample.test.demo.tests.DemoTest@fdefd3f]" name="happypathTest" duration-ms="11313" started-at="2021-04-22T23:36:50Z" finished-at="2021-04-22T23:37:01Z">
+        <test-method signature="happypathTest()[pri:1, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:10Z" name="happypathTest" finished-at="2021-04-24T15:32:25Z" duration-ms="15055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- happypathTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.demo.tests.DemoTest@fdefd3f]" name="tearDown" is-config="true" duration-ms="79" started-at="2021-04-22T23:37:01Z" finished-at="2021-04-22T23:37:01Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:25Z" name="tearDown" finished-at="2021-04-24T15:32:26Z" duration-ms="850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:26Z" name="init" finished-at="2021-04-24T15:32:28Z" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="negativetest()[pri:2, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:28Z" name="negativetest" finished-at="2021-04-24T15:32:43Z" duration-ms="14783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativetest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:43Z" name="tearDown" finished-at="2021-04-24T15:32:44Z" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:44Z" name="init" finished-at="2021-04-24T15:32:46Z" duration-ms="2431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="boundrytesting()[pri:3, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:32:46Z" name="boundrytesting" finished-at="2021-04-24T15:33:01Z" duration-ms="14342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- boundrytesting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sample.test.demo.tests.DemoTest@76ac68b0]" started-at="2021-04-24T15:33:01Z" name="tearDown" finished-at="2021-04-24T15:33:02Z" duration-ms="905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
